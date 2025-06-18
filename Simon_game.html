@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <style>
+        body {
+            width: 45rem;
+            margin: auto;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+        .head{
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 200px);
+            width: 26.9rem;
+            margin: auto;
+            justify-content: space-between;
+            grid-template-rows: repeat(2, 200px);
+            align-content: space-between;
+            height: 27rem;
+            margin-top: 4rem;
+        }
+
+        .main div {
+            border: 5px solid;
+            border-radius: 10px;
+        }
+
+        .container1 {
+            background-color: burlywood;
+        }
+
+        .container2 {
+            background-color: cornflowerblue;
+        }
+
+        .container3 {
+            background-color: aquamarine;
+        }
+
+        .container4 {
+            background-color: tomato;
+        }
+
+        .flash {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .userflash {
+            background-color: rgb(0, 255, 47);
+        }
+
+        .gameover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Simon Says Game</h1>
+    <div class ="head">
+        <h2 class="header">Press Any Key To Start The Game</h2>
+        <h3></h3>
+    </div>
+    <div class="main">
+        <div class="container1 btn" type="button"></div>
+        <div class="container2 btn" type="button"></div>
+        <div class="container3 btn" type="button"></div>
+        <div class="container4 btn" type="button"></div>
+    </div>
+    <script src="Simon_game.js"></script>
+</body>
+
+</html>
